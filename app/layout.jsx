@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import { getDocuments } from "@/lib/doc";
+import { getDocumentContent, getDocuments } from "@/lib/doc";
 import "./globals.css";
 import Header from "@/components/Header";
 
@@ -20,7 +20,6 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   const fiileData = getDocuments();
-
   return (
     <html lang="en">
       <body>
